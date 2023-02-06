@@ -3,3 +3,81 @@ git add Zadanie2.ipynb - например добавляешь исправле�
 git commit -am "rename" - обязательно добавляешь комит в ковычках
 git pull --rebase - обновляешь
 git push - добавляешь
+mkdir exam - создать папку
+cd exam - перейти в созданную папку
+ls - проверить содержимое
+git init - инициализация Initialized empty Git repository in C:/Users/Юрий/exam/.git/
+echo "Балахонов Юрий Юрьевич, Учитель" > README.md - создать файл с текстом
+git status - проверить статус
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+git add README.md - добавить файл
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the nex
+t time Git touches it
+git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+
+git commit -m "Задание1 README.md" - добавить коммит
+[main (root-commit) cb0f2fc] Задание1 README.md
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+git remote add origin https://github.com/Balahon/exam.git - удаленно добавить в репозиторий через пк
+git push -u origin main - добавление (еще один способ)
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 294 bytes | 294.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Balahon/exam.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+n
+
+Юрий@DESKTOP-EM2AERF MINGW64 ~/exam (main)
+$ git fetch
+From https://github.com/Balahon/exam
+ * [new branch]      develop    -> origin/develop
+
+Юрий@DESKTOP-EM2AERF MINGW64 ~/exam (main)
+$ git branch
+* main
+
+Юрий@DESKTOP-EM2AERF MINGW64 ~/exam (main)
+$ git branch
+* main
+
+Юрий@DESKTOP-EM2AERF MINGW64 ~/exam (main)
+$ git fetch
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.33 KiB | 5.00 KiB/s, done.
+From https://github.com/Balahon/exam
+   cb0f2fc..e12a26d  develop    -> origin/develop
+
+Юрий@DESKTOP-EM2AERF MINGW64 ~/exam (main)
+$ git fetch
+
+Юрий@DESKTOP-EM2AERF MINGW64 ~/exam (main)
+$ git pull
+Already up to date.
+
