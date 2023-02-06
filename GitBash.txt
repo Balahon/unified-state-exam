@@ -1,0 +1,5 @@
+git clone https://github.com/Balahon/unified-state-exam.git EGE - клонируешь репозиторий из гитхаба в папку на пк (EGE)
+git add Zadanie2.ipynb - например добавляешь исправленный файл
+git commit -am "rename" - обязательно добавляешь комит в ковычках
+git pull --rebase - обновляешь
+git push - добавляешь
